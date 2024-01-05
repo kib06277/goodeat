@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">goodeat</string>
+    <string name="welcometxt">飯飯伴 \n 有自己人撐住真好</string>
+    <string name="use_login">會員登入</string>
+    <string name="email">email 輸入驗證碼</string>
+    <string name="ok">確定</string>
+    <string name="TimeNow">09：00</string>
+
+</resources>

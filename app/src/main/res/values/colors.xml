@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="FF782225">#FF782225</color>
+    <color name="FFe5d6c4">#FFe5d6c4</color>
+    <color name="FFb1b1b2">#FFb1b1b2</color>
+    <color name="FFebebeb">#FFebebeb</color>
+    <color name="FFd8d9d9">#FFd8d9d9</color>
+    <color name="FF16461b">#FF16461b</color>
+    <color name="FFFFFFFF">#FFFFFFFF</color>
+    <color name="FF162c1b">#FF162c1b</color>
+    <color name="FFe2e7e6">#FFe2e7e6</color>
+</resources>

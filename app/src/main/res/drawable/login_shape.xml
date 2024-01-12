@@ -15,6 +15,11 @@
         android:top="@dimen/distance_10" />
 
     <!--設定圓角，只適用於 rectangle-->
-    <corners android:radius="15dp" />
+    <!-- 設定不同的圓角半徑，上邊為30dp，下邊為0dp -->
+    <corners
+        android:topLeftRadius="60dp"
+        android:topRightRadius="60dp"
+        android:bottomLeftRadius="0dp"
+        android:bottomRightRadius="0dp" />
 
 </shape>

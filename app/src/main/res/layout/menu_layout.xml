@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/distance_20"
+        app:srcCompat="@mipmap/back"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/distance_5"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/hellouser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/distance_20"
+        android:layout_marginBottom="@dimen/distance_20"
+        android:text="@string/hellouser"
+        android:textColor="@color/FF16461b"
+        android:textSize="@dimen/txtsize_24"/>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/distance_5"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/dietcalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/distance_20"
+        android:layout_marginBottom="@dimen/distance_20"
+        android:text="@string/dietcalendar"
+        android:textColor="@color/FF16461b"
+        android:textSize="@dimen/txtsize_24"/>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/distance_5"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/diary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/distance_20"
+        android:layout_marginBottom="@dimen/distance_20"
+        android:text="@string/diary"
+        android:textColor="@color/FF16461b"
+        android:textSize="@dimen/txtsize_24"/>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/distance_5"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/messageboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/distance_20"
+        android:layout_marginBottom="@dimen/distance_20"
+        android:text="@string/messageboard"
+        android:textColor="@color/FF16461b"
+        android:textSize="@dimen/txtsize_24"/>
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/distance_5"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/reserve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/distance_20"
+        android:layout_marginBottom="@dimen/distance_20"
+        android:text="@string/reserve"
+        android:textColor="@color/FF16461b"
+        android:textSize="@dimen/txtsize_24"/>
+
+    <View
+        android:id="@+id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/distance_5"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/portionsize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/distance_20"
+        android:layout_marginBottom="@dimen/distance_20"
+        android:text="@string/portionsize"
+        android:textColor="@color/FF16461b"
+        android:textSize="@dimen/txtsize_24"/>
+
+    <View
+        android:id="@+id/line6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/distance_5"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/aboutwe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/distance_20"
+        android:layout_marginBottom="@dimen/distance_20"
+        android:text="@string/aboutwe"
+        android:textColor="@color/FF16461b"
+        android:textSize="@dimen/txtsize_24"/>
+
+</LinearLayout>

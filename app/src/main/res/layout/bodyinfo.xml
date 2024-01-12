@@ -12,7 +12,7 @@
         android:id="@+id/logotxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/logotxt"
+        app:srcCompat="@drawable/logotxt"
         android:layout_marginTop="@dimen/distance_10"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -35,8 +35,8 @@
             <ImageView
                 android:id="@+id/clockback"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                app:srcCompat="@mipmap/clockbackground"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/clockbackground"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/distance_45"
                 android:gravity="center"
-                android:text="@string/TimeNow"
+                android:text="@string/timenow"
                 android:textColor="@color/FF16461b"
                 android:textSize="@dimen/txtsize_20"
                 app:layout_constraintTop_toTopOf="parent"
@@ -58,9 +58,10 @@
 
             <ImageView
                 android:id="@+id/Second_hand"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/Second_hand"
+                app:srcCompat="@mipmap/second_hand"
+                app:layout_constraintHorizontal_bias="0.53"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -71,6 +72,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@mipmap/hour_hand"
+                app:layout_constraintHorizontal_bias="0.46"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -81,6 +83,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@mipmap/minute_hand"
+                app:layout_constraintVertical_bias="0.35"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -89,35 +92,112 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
-            android:id="@+id/use_login"
+            android:id="@+id/plasekeyindate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginTop="@dimen/distance_40"
-            android:text="@string/use_login"
+            android:text="@string/plasekeyindate"
             android:textColor="@color/FF16461b"
-            android:textSize="@dimen/txtsize_24"/>
+            android:textSize="@dimen/txtsize_18"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/distance_15">
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/distance_5"
+                android:layout_marginRight="@dimen/distance_5"
+                android:layout_gravity="center"
+                android:text="@string/weight"
+                android:textColor="@color/FF16461b"
+                android:textSize="@dimen/txtsize_18"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/weight_keyin"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/keyin_shape"
+                android:textSize="@dimen/txtsize_18"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/kg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/distance_5"
+                android:layout_marginRight="@dimen/distance_10"
+                android:layout_gravity="center"
+                android:text="@string/kg"
+                android:textColor="@color/FF16461b"
+                android:textSize="@dimen/txtsize_18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bodyfat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/distance_10"
+                android:layout_marginRight="@dimen/distance_5"
+                android:layout_gravity="center"
+                android:text="@string/bodyfat"
+                android:textColor="@color/FF16461b"
+                android:textSize="@dimen/txtsize_18"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/bodyfat_keyin"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/keyin_shape"
+                android:textSize="@dimen/txtsize_18"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/distance_5"
+                android:layout_marginRight="@dimen/distance_5"
+                android:layout_gravity="center"
+                android:text="@string/percentage"
+                android:textColor="@color/FF16461b"
+                android:textSize="@dimen/txtsize_18"
+                android:textStyle="bold" />
+
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/email"
+            android:id="@+id/bodyinfo_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/distance_20"
+            android:layout_marginLeft="@dimen/distance_40"
+            android:layout_marginRight="@dimen/distance_40"
+            android:text="@string/bodyinfo_msg"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize_16"
+            android:background="@drawable/text_shape"/>
+
+        <TextView
+            android:id="@+id/bodyinfo_msg1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginTop="@dimen/distance_30"
-            android:text="@string/email"
-            android:textColor="@color/FF16461b"
-            android:textSize="@dimen/txtsize_20"/>
-
-        <EditText
-            android:id="@+id/email_keyin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="@dimen/distance_20"
-            android:layout_marginBottom="@dimen/distance_40"
-            android:ems="13"
-            android:inputType="text"
-            android:background="@drawable/keyin_shape"/>
+            android:text="@string/bodyinfo_msg1"
+            android:textColor="@color/FFb1b1b2"
+            android:textSize="@dimen/txtsize_16"/>
 
         <Button
             android:id="@+id/ok"

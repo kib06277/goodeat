@@ -1,9 +1,114 @@
 <resources>
     <string name="app_name">goodeat</string>
     <string name="welcometxt">飯飯伴 \n 有自己人撐住真好</string>
+
     <string name="use_login">會員登入</string>
     <string name="email">email 輸入驗證碼</string>
-    <string name="ok">確定</string>
-    <string name="TimeNow">09：00</string>
+    <string name="ok">確認</string>
 
+    <string name="timenow">09：00</string>
+    <string name="plasekeyindate">請輸入您今日的數據</string>
+    <string name="kg">kg</string>
+    <string name="bodyfat">體脂</string>
+    <string name="percentage">%</string>
+    <string name="bodyinfo_msg">您尚餘 20 天便完成 90 天減肥之旅!</string>
+    <string name="bodyinfo_msg1">上磅這個行為是希望提醒您 \n 我們在建立新的生活習慣中 \n 不要輕易放棄成為全新的您</string>
+
+    <string name="baseinfo">基本資料</string>
+    <string name="username_title">UserName</string>
+    <string name="baseuserinfo">基本簡介</string>
+    <string name="healthystate">健康狀態</string>
+    <string name="eatedstate">飲食狀態</string>
+    <string name="schedule_sports">作息與運動</string>
+    <string name="target_setting">目標設定</string>
+
+    <string name="hellouser">你好，Zoey</string>
+    <string name="dietcalendar">飲食月曆</string>
+    <string name="diary">每天日記</string>
+    <string name="messageboard">公告版</string>
+    <string name="reserve">預約跟進</string>
+    <string name="portionsize">飲食份量</string>
+    <string name="aboutwe">關於我們</string>
+
+    <string name="username">姓名</string>
+    <string name="phone">電話</string>
+    <string name="profession">職業</string>
+    <string name="height">身高</string>
+    <string name="waistline">腰圍</string>
+    <string name="age">年齡</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="birthday">生日</string>
+    <string name="birthday_keyin">年/月/日</string>
+    <string name="address">居住地</string>
+    <string name="weight">體重</string>
+    <string name="hips">臀圍</string>
+    <string name="visceralfat">內臟脂肪</string>
+    <string name="side">側面</string>
+    <string name="front">正面</string>
+    <string name="reverse">背面</string>
+    <string name="baseuserinfo_msg">提醒:每一個月需要更新身型圖片呦!</string>
+    <string name="baseuserinfo_msg1">請放心!以上資料皆會保密，除非是獲得您的許可!</string>
+
+    <string name="selectgallery">從圖庫選擇</string>
+    <string name="scan">拍照</string>
+    <string name="reimg">移除目前照片</string>
+
+    <string name="insomnia">容易失眠</string>
+    <string name="handsfeetcold">手腳冰冷</string>
+    <string name="constipate">便祕</string>
+    <string name="thyroid">甲狀腺</string>
+    <string name="easyEdema">易水腫</string>
+    <string name="menstruationnotsmooth">經期不順</string>
+    <string name="endocrine">內分泌</string>
+    <string name="easycatarrh">易感冒</string>
+    <string name="stomachache">胃痛易脹氣</string>
+    <string name="otherreplenish">其他補充</string>
+    <string name="family_medicalhistory">家族病史</string>
+    <string name="have">有</string>
+    <string name="none">無</string>
+    <string name="Replenish">補充</string>
+    <string name="takemedicine">服藥</string>
+    <string name="menstruation">月經是否正常</string>
+    <string name="no">否</string>
+    <string name="about">約每</string>
+    <string name="weekmonth">星期/月</string>
+    <string name="big">量大</string>
+    <string name="middle">量中</string>
+    <string name="Small">量小</string>
+    <string name="pain">痛楚</string>
+    <string name="verypainful">很痛</string>
+    <string name="acceptable">可接受</string>
+    <string name="indifferent">無感</string>
+    <string name="yes">是</string>
+
+    <string name="sleep">幾點睡覺</string>
+    <string name="getup">幾點起床</string>
+    <string name="sleephours">睡眠時數</string>
+    <string name="exercisehabits">運動習慣</string>
+    <string name="project">項目</string>
+    <string name="week">每周</string>
+    <string name="frequency">次</string>
+    <string name="time">時間</string>
+    <string name="hour">小時</string>
+    <string name="everydefecation">每日排便嗎?</string>
+    <string name="day">一日</string>
+    <string name="everydaypee">每天小便</string>
+    <string name="ampm">am/pm</string>
+    <string name="hrs">hrs</string>
+    <string name="schedule_sports_Replenish">你有想特別補充甚麼讓我們知道嗎?</string>
+
+    <string name="question1">1.妳為什麼會想參加課程?</string>
+    <string name="confidenceup">提高自信</string>
+    <string name="healthyup">更健康</string>
+    <string name="revision_menstruation">想要調經</string>
+    <string name="other">或其他</string>
+    <string name="question2">2.妳希望可以減?</string>
+    <string name="nowweight">體重從現在</string>
+    <string name="from">到</string>
+    <string name="nowbodyfat">體脂從現在</string>
+    <string name="cm">cm</string>
+    <string name="nowwaistline">腰圍從現在</string>
+    <string name="question3">3.達成目標會給自己什麼鼓勵?</string>
+    <string name="question4">4.對此刻的自己說一句話?</string>
 </resources>

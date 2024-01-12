@@ -5,7 +5,7 @@
     android:shape="rectangle">
 
     <!--指定形狀的填充色-->
-    <solid android:color="@color/FF16461b" />
+    <solid android:color="@color/FF162c1b" />
 
     <!--設定內容區域離邊界的間距-->
     <padding
@@ -15,6 +15,6 @@
         android:top="@dimen/distance_10" />
 
     <!--設定圓角，只適用於 rectangle-->
-    <corners android:radius="30dp" />
+    <corners android:radius="15dp" />
 
 </shape>

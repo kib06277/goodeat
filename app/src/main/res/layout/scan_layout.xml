@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/distance_10"
+    android:background="background_shape">
+
+    <ImageView
+        android:id="@+id/imgupload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/imgupload"
+        android:layout_margin="@dimen/distance_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/selectgallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectgallery"
+        android:textSize="@dimen/txtsize_18"
+        android:layout_margin="@dimen/distance_20"
+        app:layout_constraintLeft_toRightOf="@+id/imgupload"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/scanimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/scan"
+        android:layout_margin="@dimen/distance_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgupload"/>
+
+    <TextView
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scan"
+        android:textSize="@dimen/txtsize_18"
+        android:layout_marginTop="@dimen/distance_30"
+        android:layout_marginLeft="@dimen/distance_20"
+        app:layout_constraintLeft_toRightOf="@+id/scanimg"
+        app:layout_constraintTop_toBottomOf="@+id/selectgallery"/>
+
+    <ImageView
+        android:id="@+id/imgdelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/imgdelete"
+        android:layout_margin="@dimen/distance_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scanimg"/>
+
+    <TextView
+        android:id="@+id/reimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reimg"
+        android:textSize="@dimen/txtsize_18"
+        android:layout_marginTop="@dimen/distance_30"
+        android:layout_marginLeft="@dimen/distance_20"
+        app:layout_constraintLeft_toRightOf="@+id/imgdelete"
+        app:layout_constraintTop_toBottomOf="@+id/scan"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

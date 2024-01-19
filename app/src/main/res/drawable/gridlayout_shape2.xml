@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetRight="-5dp">
+
+    <!--指定形狀類型，默認為 rectangle -->
+    <shape
+        android:shape="rectangle">
+
+        <stroke
+            android:width="1dp"
+            android:color="#FFd8d9d9" /><!-- 描边，边框宽度、颜色 -->
+
+        <!--設定內容區域離邊界的間距-->
+        <padding
+            android:bottom="@dimen/distance_5"
+            android:left="@dimen/distance_5"
+            android:right="@dimen/distance_5"
+            android:top="@dimen/distance_5" />
+
+    </shape>
+
+</inset>

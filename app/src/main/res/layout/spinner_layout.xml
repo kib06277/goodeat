@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="time"
+    android:textColor="@color/FF16461b"
+    android:textSize="@dimen/txtsize_18"
+    android:textStyle="bold"
+    android:paddingLeft="@dimen/distance_10"
+    android:paddingRight="@dimen/distance_10"
+    android:background="@color/FFd8d9d9"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

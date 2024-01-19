@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/FFe5d6c4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/page1_title_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/login_shape"
+        android:layout_marginTop="@dimen/distance_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_5"
+            android:gravity="center"
+            android:text="@string/portionsize"
+            android:textColor="@color/FF16461b"
+            android:textSize="@dimen/txtsize_18" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/FFd8d9d9"
+            android:layout_marginTop="@dimen/distance_5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/distance_5">
+
+            <ImageView
+                android:id="@+id/mainfood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/distance_5"
+                app:srcCompat="@mipmap/mainfood" />
+
+            <ImageView
+                android:id="@+id/meat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/distance_5"
+                app:srcCompat="@mipmap/meat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/distance_5">
+
+            <TextView
+                android:id="@+id/mainfood_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/distance_5"
+                android:layout_marginLeft="@dimen/distance_40"
+                android:layout_marginRight="@dimen/distance_40"
+                android:text="@string/mainfood_txt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtsize_18"
+                android:background="@drawable/text_shape"/>
+
+            <TextView
+                android:id="@+id/meat_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/distance_5"
+                android:layout_marginLeft="@dimen/distance_40"
+                android:layout_marginRight="@dimen/distance_40"
+                android:background="@drawable/text_shape"
+                android:text="@string/meat_txt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtsize_18" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/distance_5">
+
+            <ImageView
+                android:id="@+id/vegetables"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/vegetables" />
+
+            <ImageView
+                android:id="@+id/fruit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/fruit" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/distance_5">
+
+            <TextView
+                android:id="@+id/vegetables_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/distance_5"
+                android:layout_marginLeft="@dimen/distance_40"
+                android:layout_marginRight="@dimen/distance_40"
+                android:text="@string/vegetables_txt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtsize_18"
+                android:background="@drawable/text_shape"/>
+
+            <TextView
+                android:id="@+id/fruit_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/distance_5"
+                android:layout_marginLeft="@dimen/distance_40"
+                android:layout_marginRight="@dimen/distance_40"
+                android:text="@string/fruit_txt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtsize_18"
+                android:background="@drawable/text_shape"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/openmanual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/distance_40"
+            android:padding="@dimen/distance_20"
+            android:text="@string/openmanual"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize_18"
+            android:background="@drawable/button_shape1"/>
+
+        <TextView
+            android:id="@+id/portionsize_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_5"
+            android:gravity="center"
+            android:text="@string/portionsize_msg"
+            android:textColor="@color/FF16461b"
+            android:textSize="@dimen/txtsize_18" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

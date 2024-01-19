@@ -12,4 +12,7 @@
     <color name="FF162c1b">#FF162c1b</color>
     <color name="FFe2e7e6">#FFe2e7e6</color>
     <color name="FFFF0000">#FFFF0000</color>
+    <color name="FF00FF00">#FF00FF00</color>
+    <color name="FF0000FF">#FF0000FF</color>
+    <color name="transparent">#77000000</color>
 </resources>

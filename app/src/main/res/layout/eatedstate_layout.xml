@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/FFe5d6c4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/page_title_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_shape"
+            android:layout_marginTop="@dimen/distance_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/eatedstate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/distance_5"
+                android:gravity="center"
+                android:text="@string/eatedstate"
+                android:textColor="@color/FF16461b"
+                android:textSize="@dimen/txtsize_18" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/distance_5"
+                android:background="@color/FFd8d9d9" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/question5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/distance_10"
+                    android:gravity="right"
+                    android:text="@string/question5"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/question5_keyin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/distance_10"
+                    android:layout_marginTop="@dimen/distance_5"
+                    android:background="@drawable/keyin_shape"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:textSize="@dimen/txtsize_18"
+                    app:layout_constraintLeft_toRightOf="@+id/question5"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/weekmonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_10"
+                    android:layout_marginTop="@dimen/distance_15"
+                    android:text="@string/weekmonth"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@+id/question5_keyin"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/question6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/distance_5"
+                    android:layout_marginTop="@dimen/distance_30"
+                    android:text="@string/question6"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/question5" />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_5"
+                    android:layout_marginTop="@dimen/distance_20"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toRightOf="@+id/question6"
+                    app:layout_constraintTop_toBottomOf="@+id/question5">
+
+                    <TextView
+                        android:id="@+id/nightsnack_yes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/yes"
+                        android:textSize="@dimen/txtsize_18"
+                        android:textStyle="bold"
+                        android:textColor="@color/FF16461b"/>
+
+                    <ImageView
+                        android:id="@+id/nightsnack_yes_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/distance_5"
+                        app:srcCompat="@mipmap/circle" />
+
+                    <TextView
+                        android:id="@+id/nightsnack_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/distance_5"
+                        android:text="@string/no"
+                        android:textSize="@dimen/txtsize_18"
+                        android:textStyle="bold"
+                        android:textColor="@color/FF16461b"/>
+
+                    <ImageView
+                        android:id="@+id/nightsnack_no_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/distance_5"
+                        app:srcCompat="@mipmap/circle" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/eatedstate_frequency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/distance_10"
+                    android:gravity="right"
+                    android:text="@string/eatedstate_frequency"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@+id/question6"
+                    app:layout_constraintTop_toBottomOf="@+id/LinearLayout" />
+
+                <EditText
+                    android:id="@+id/eatedstate_frequency_keyin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/distance_10"
+                    android:layout_marginTop="@dimen/distance_5"
+                    android:background="@drawable/keyin_shape"
+                    android:ems="2"
+                    android:inputType="number"
+                    android:textSize="@dimen/txtsize_18"
+                    app:layout_constraintLeft_toRightOf="@+id/eatedstate_frequency"
+                    app:layout_constraintTop_toBottomOf="@+id/LinearLayout" />
+
+                <TextView
+                    android:id="@+id/frequencybyweek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_10"
+                    android:text="@string/frequencybyweek"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@+id/eatedstate_frequency_keyin"
+                    app:layout_constraintTop_toBottomOf="@+id/LinearLayout"
+                    app:layout_constraintTop_toTopOf="@+id/eatedstate_frequency" />
+
+                <TextView
+                    android:id="@+id/question7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/distance_20"
+                    android:layout_marginTop="@dimen/distance_25"
+                    android:text="@string/question7"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/eatedstate_frequency" />
+
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/distance_20"
+                    android:layout_marginTop="@dimen/distance_5"
+                    android:text="0"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/question7" />
+
+                <SeekBar
+                    android:id="@+id/seekbar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/distance_10"
+                    android:max="10000"
+                    android:progressDrawable="@drawable/seekbar_voice_style"
+                    android:splitTrack="false"
+                    app:layout_constraintLeft_toRightOf="@+id/number"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/question7" />
+
+                <TextView
+                    android:id="@+id/question8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/distance_20"
+                    android:layout_marginTop="@dimen/distance_10"
+                    android:text="@string/question8"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/seekbar" />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_10"
+                    android:layout_marginTop="@dimen/distance_10"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/question8">
+
+                    <TextView
+                        android:id="@+id/snack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/snack"
+                        android:textSize="@dimen/txtsize_18"
+                        android:textStyle="bold"
+                        android:textColor="@color/FF16461b"/>
+
+                    <ImageView
+                        android:id="@+id/snack_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/circle" />
+
+                    <TextView
+                        android:id="@+id/starch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/starch"
+                        android:textSize="@dimen/txtsize_18"
+                        android:textStyle="bold"
+                        android:textColor="@color/FF16461b"/>
+
+                    <ImageView
+                        android:id="@+id/starch_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/circle" />
+
+                    <TextView
+                        android:id="@+id/dessert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/dessert"
+                        android:textSize="@dimen/txtsize_18"
+                        android:textStyle="bold"
+                        android:textColor="@color/FF16461b"/>
+
+                    <ImageView
+                        android:id="@+id/dessert_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/distance_5"
+                        android:layout_marginRight="@dimen/distance_5"
+                        app:srcCompat="@mipmap/circle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_10"
+                    android:layout_marginTop="@dimen/distance_10"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/LinearLayout2">
+
+                    <TextView
+                        android:id="@+id/friedfood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/friedfood"
+                        android:textSize="@dimen/txtsize_18"
+                        android:textStyle="bold"
+                        android:textColor="@color/FF16461b"/>
+
+                    <ImageView
+                        android:id="@+id/friedfood_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        app:srcCompat="@mipmap/circle" />
+
+                    <TextView
+                        android:id="@+id/meat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/meat"
+                        android:textSize="@dimen/txtsize_18"
+                        android:textStyle="bold"
+                        android:textColor="@color/FF16461b"/>
+
+                    <ImageView
+                        android:id="@+id/meat_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/circle" />
+
+                    <TextView
+                        android:id="@+id/drinks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/drinks"
+                        android:textSize="@dimen/txtsize_18"
+                        android:textStyle="bold"
+                        android:textColor="@color/FF16461b"/>
+
+                    <ImageView
+                        android:id="@+id/drinks_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/circle" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/question9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/distance_20"
+                    android:layout_marginTop="@dimen/distance_10"
+                    android:text="@string/question9"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/LinearLayout3" />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_5"
+                    android:layout_marginTop="@dimen/distance_5"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/question9">
+
+                    <TextView
+                        android:id="@+id/medicine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/distance_20"
+                        android:text="@string/medicine"
+                        android:textSize="@dimen/txtsize_18"
+                        android:textStyle="bold"
+                        android:textColor="@color/FF16461b"/>
+
+                    <ImageView
+                        android:id="@+id/medicine_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/distance_5"
+                        android:layout_marginRight="@dimen/distance_5"
+                        app:srcCompat="@mipmap/circle" />
+
+                    <TextView
+                        android:id="@+id/intermittent_fasting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/distance_10"
+                        android:text="@string/intermittent_fasting"
+                        android:textSize="@dimen/txtsize_18"
+                        android:textStyle="bold"
+                        android:textColor="@color/FF16461b"/>
+
+                    <ImageView
+                        android:id="@+id/intermittent_fasting_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/distance_5"
+                        android:layout_marginRight="@dimen/distance_5"
+                        app:srcCompat="@mipmap/circle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/distance_5"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/LinearLayout4">
+
+                    <TextView
+                        android:id="@+id/ketogenic_diet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/ketogenic_diet"
+                        android:textSize="@dimen/txtsize_18"
+                        android:textStyle="bold"
+                        android:textColor="@color/FF16461b"/>
+
+                    <ImageView
+                        android:id="@+id/ketogenic_diet_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/circle" />
+
+                    <TextView
+                        android:id="@+id/lowcarbdiet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/lowcarbdiet"
+                        android:textSize="@dimen/txtsize_18"
+                        android:textStyle="bold"
+                        android:textColor="@color/FF16461b"/>
+
+                    <ImageView
+                        android:id="@+id/lowcarbdiet_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/circle" />
+
+                    <TextView
+                        android:id="@+id/simplydieting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/simplydieting"
+                        android:textSize="@dimen/txtsize_18"
+                        android:textStyle="bold"
+                        android:textColor="@color/FF16461b"/>
+
+                    <ImageView
+                        android:id="@+id/simplydieting_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@mipmap/circle" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/eatedstate_other_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_5"
+                    android:layout_marginRight="@dimen/distance_5"
+                    app:srcCompat="@mipmap/circle"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/LinearLayout5"/>
+
+                <TextView
+                    android:id="@+id/eatedstate_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/distance_5"
+                    android:layout_marginTop="@dimen/distance_10"
+                    android:text="@string/eatedstate_other"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    android:textColor="@color/FF16461b"
+                    app:layout_constraintLeft_toRightOf="@+id/eatedstate_other_img"
+                    app:layout_constraintTop_toBottomOf="@+id/LinearLayout5" />
+
+                <EditText
+                    android:id="@+id/eatedstate_other_keyin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/distance_5"
+                    android:layout_marginTop="@dimen/distance_5"
+                    android:background="@drawable/keyin_shape"
+                    android:inputType="text"
+                    android:textSize="@dimen/txtsize_18"
+                    app:layout_constraintLeft_toRightOf="@+id/eatedstate_other"
+                    app:layout_constraintRight_toRightOf="@+id/LinearLayout5"
+                    app:layout_constraintTop_toBottomOf="@+id/LinearLayout5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/distance_20"
+                android:background="@drawable/button_shape"
+                android:text="@string/ok"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

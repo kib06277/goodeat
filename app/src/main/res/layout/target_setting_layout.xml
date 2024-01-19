@@ -7,23 +7,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/back"
-        android:layout_margin="@dimen/distance_10"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <ImageView
-        android:id="@+id/home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/home"
-        android:layout_margin="@dimen/distance_10"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+    <include
+        android:id="@+id/title"
+        layout="@layout/page_title_layout"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,7 +19,7 @@
         android:layout_marginTop="@dimen/distance_10"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintTop_toBottomOf="@+id/title"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <TextView
@@ -50,7 +36,7 @@
             android:id="@+id/line"
             android:layout_width="match_parent"
             android:layout_height="3dp"
-            android:background="@color/FFb1b1b2"
+            android:background="@color/FFd8d9d9"
             android:layout_marginTop="@dimen/distance_5"/>
 
         <TextView
@@ -65,53 +51,58 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/distance_5"
             android:orientation="horizontal">
 
-            <RadioGroup
-                android:id="@+id/RadioGroup"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/confidenceup"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingRight="@dimen/distance_20"
-                android:orientation="horizontal">
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/distance_5"
+                android:text="@string/confidenceup"
+                android:textColor="@color/FF16461b"
+                android:textSize="@dimen/txtsize_18"
+                android:textStyle="bold" />
 
-                <RadioButton
-                    android:id="@+id/confidenceup"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="right"
-                    android:layoutDirection="rtl"
-                    android:text="@string/confidenceup"
-                    android:textDirection="ltr"
-                    android:textSize="@dimen/txtsize_18"
-                    android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/confidenceup_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/circle" />
 
-                <RadioButton
-                    android:id="@+id/healthyup"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="right"
-                    android:layoutDirection="rtl"
-                    android:text="@string/healthyup"
-                    android:textDirection="ltr"
-                    android:textSize="@dimen/txtsize_18"
-                    android:textStyle="bold" />
+            <TextView
+                android:id="@+id/healthyup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/distance_5"
+                android:text="@string/healthyup"
+                android:textColor="@color/FF16461b"
+                android:textSize="@dimen/txtsize_18"
+                android:textStyle="bold" />
 
-                <RadioButton
-                    android:id="@+id/revision_menstruation"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="right"
-                    android:layoutDirection="rtl"
-                    android:text="@string/revision_menstruation"
-                    android:textDirection="ltr"
-                    android:textSize="@dimen/txtsize_18"
-                    android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/healthyup_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/circle" />
 
-            </RadioGroup>
+            <TextView
+                android:id="@+id/revision_menstruation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/distance_5"
+                android:text="@string/revision_menstruation"
+                android:textColor="@color/FF16461b"
+                android:textSize="@dimen/txtsize_18"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/revision_menstruation_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/circle" />
 
         </LinearLayout>
 

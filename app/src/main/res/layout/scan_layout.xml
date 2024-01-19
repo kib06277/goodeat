@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="@dimen/distance_10"
-    android:background="background_shape">
+    android:background="@drawable/background_shape">
 
     <ImageView
         android:id="@+id/imgupload"

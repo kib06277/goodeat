@@ -9,4 +9,24 @@
     <style name="MyRadioButton" parent="Theme.AppCompat.Light">
         <item name="android:button">@color/FFFF0000</item>
     </style>
+
+    <!--全屏加透明樣式-->
+    <style name="FullScreenTranslucentTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--
+        設置窗口的背景為透明，設置透明背景必須設置此項
+        說明：這是不可以直接設置 #00000000 , 直接設置會無效，要在 colors.xml 文件夾下一個顏色值
+        -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!--設置窗口的背景是否為半透明，設置透明背景必須要設置此項-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--不設置 activity 進入和退出動畫樣式-->
+        <item name="android:windowAnimationStyle">@null</item>
+        <!--
+        設置 activity 顯示為全屏
+        如果這裡設置為 true 的話，狀況欄也會隱藏，會出現視覺差
+        -->
+        <item name="android:windowFullscreen">false</item>
+        <!--設置 Activity 不顯示標題欄-->
+        <item name="android:windowNoTitle">true</item>
+    </style>
 </resources>

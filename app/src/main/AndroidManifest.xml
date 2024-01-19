@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Goodeat"
         tools:targetApi="31">
         <activity
-            android:name=".frontActivity"
+            android:name=".AppCompatActivity.FrontActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +22,50 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".AppCompatActivity.MainActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".AppCompatActivity.BodyInfo"
+            android:exported="true"/>
+        <activity
+            android:name=".AppCompatActivity.UserPage"
+            android:exported="true"/>
+        <activity
+            android:name=".AppCompatActivity.Menu"
+            android:theme="@style/FullScreenTranslucentTheme"
+            android:exported="true"/>
+        <activity
+            android:name=".AppCompatActivity.BaseUserInfo"
+            android:exported="true"/>
+        <activity
+            android:name=".AppCompatActivity.HealthyState"
+            android:exported="true"/>
+        <activity
+            android:name=".AppCompatActivity.EatedState"
+            android:exported="true"/>
+        <activity
+            android:name=".AppCompatActivity.Schedule_Sports"
+            android:exported="true"/>
+        <activity
+            android:name=".AppCompatActivity.Target_Setting"
+            android:exported="true"/>
+        <activity
+            android:name=".AppCompatActivity.Dietcalendar"
+            android:exported="true"/>
+        <activity
+            android:name=".AppCompatActivity.Messageboard"
+            android:exported="true"/>
+        <activity
+            android:name=".AppCompatActivity.Portionsize"
+            android:exported="true"/>
+        <activity
+            android:name=".AppCompatActivity.Reserve"
+            android:exported="true"/>
+        <activity
+            android:name=".AppCompatActivity.Aboutwe"
+            android:exported="true"/>
+        <activity
+            android:name=".AppCompatActivity.Diary"
             android:exported="true"/>
     </application>
 

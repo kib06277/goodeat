@@ -111,4 +111,79 @@
     <string name="nowwaistline">腰圍從現在</string>
     <string name="question3">3.達成目標會給自己什麼鼓勵?</string>
     <string name="question4">4.對此刻的自己說一句話?</string>
+
+    <string name="question5">1.一天通常吃</string>
+    <string name="question6">2.有吃宵夜習慣嗎?</string>
+    <string name="question7">3.每日飲水量：(間距挑選)</string>
+    <string name="question8">4.你會覺得自己是：(可複選)</string>
+    <string name="question9">5.試過那些減肥方式：(可複選)</string>
+    <string name="meal">餐</string>
+    <string name="eatedstate_frequency">頻率</string>
+    <string name="frequencybyweek">次/週</string>
+    <string name="snack">零食控</string>
+    <string name="starch">澱粉控</string>
+    <string name="dessert">甜品控</string>
+    <string name="friedfood">炸物控</string>
+    <string name="meat">肉食控</string>
+    <string name="drinks">飲品控</string>
+    <string name="medicine">西藥/中藥</string>
+    <string name="intermittent_fasting">間歇性斷食</string>
+    <string name="ketogenic_diet">生酮飲食</string>
+    <string name="lowcarbdiet">低碳飲食</string>
+    <string name="simplydieting">單純節食</string>
+    <string name="eatedstate_other">其他：</string>
+
+    <string name="aboutwe_message">
+        創辦人 Zoey 過去試過不同減肥方式 \n
+        低碳飲食、168、保健食品減重、 \n
+        每天高強度運動、一星期蔬菜湯排毒等等 \n
+        踏入 30 歲後代謝更加變慢，方法不意湊效 \n\n
+        為透過伴食 APP 跟進飲食三餐，\n
+        <b>每天微調，每天進步，每天建立飲食正確認知</b> \n
+        也順利找出瘦不下來的盲點 \n\n
+        「不是我無能，只是以前方法不貼地」 \n
+        「原來有人陪伴減肥的感覺，真是好好」 \n\n
+        減重，只是重新認識自己的過程，\n
+        我們陪你一步步成為理想中的自己
+    </string>
+
+    <string-array name="time">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+    </string-array>
+
+    <string name="mainfood_txt">主食</string>
+    <string name="meat_txt">肉食</string>
+    <string name="vegetables_txt">蔬菜</string>
+    <string name="fruit_txt">水果</string>
+    <string name="openmanual">解鎖生存手冊</string>
+    <string name="portionsize_msg">
+        建立我們的共同語崖 \n
+        不用擔心學不會 \n
+        會一步步教你!
+    </string>
+
+
 </resources>

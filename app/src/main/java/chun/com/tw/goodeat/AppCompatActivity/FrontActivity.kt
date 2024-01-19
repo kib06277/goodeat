@@ -1,16 +1,15 @@
-package chun.com.tw.goodeat
+package chun.com.tw.goodeat.AppCompatActivity
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
+import chun.com.tw.goodeat.R
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 //歡迎頁面
-class frontActivity : AppCompatActivity() {
+class FrontActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.frontactivity) //指定畫面
@@ -18,10 +17,10 @@ class frontActivity : AppCompatActivity() {
         // 啟動協程
         GlobalScope.launch {
             // 等待五秒
-            delay(5000)
+            delay(1000)
 
             //跳轉首页
-            val intent = Intent(this@frontActivity, MainActivity::class.java)
+            val intent = Intent(this@FrontActivity, MainActivity::class.java)
             startActivity(intent)
             finish()
         }

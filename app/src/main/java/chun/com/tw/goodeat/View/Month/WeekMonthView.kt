@@ -11,7 +11,6 @@ import java.util.*
 
 /**
  * 月份View，可选中某一星期
- * Created by han on 2023/4/12.
  */
 internal class WeekMonthView(
     context: Context,

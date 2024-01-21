@@ -1,11 +1,13 @@
 package chun.com.tw.goodeat.Base
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.view.View
 import chun.com.tw.goodeat.Bean.ViewAttrs
 import chun.com.tw.goodeat.Constant.Const
+import chun.com.tw.goodeat.R
 import chun.com.tw.goodeat.Util.Util
 
 /**
@@ -22,14 +24,14 @@ class WeekTitleView(
     }
 
     private var cellWidth: Int = 0
-    private val cellHeight: Int = Util.dp2px(context, 38f).toInt()
+    private val cellHeight: Int = Util.dp2px(context, 40f).toInt()
 
     private var dataInit = false
     private lateinit var paint: Paint
     private var weekTitles = mutableListOf<String>()
 
     // 左右间距
-    var padding: Int = 0
+    var padding: Int = 15
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
@@ -48,6 +50,7 @@ class WeekTitleView(
         dataInit = true
     }
 
+    @SuppressLint("ResourceAsColor")
     private fun initPaint() {
         paint = Paint().apply {
             isAntiAlias = true
@@ -74,11 +77,12 @@ class WeekTitleView(
     /**
      * 繪製星期標題
      */
+    @SuppressLint("ResourceAsColor")
     private fun drawTitle(canvas: Canvas?) {
         paint.color = viewAttr.weekTitleColor
         for (index in weekTitles.indices) {
             val textLeft = cellWidth / 2.0f + index * cellWidth + padding
-            val textTop = cellHeight / 2.0f - (paint.fontMetrics.bottom + paint.fontMetrics.top) / 2
+            val textTop = cellHeight / 2.0f - (paint.fontMetrics.bottom + paint.fontMetrics.top)
             canvas?.drawText(weekTitles[index], textLeft, textTop, paint)
         }
     }

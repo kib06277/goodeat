@@ -3,44 +3,44 @@
 <resources>
     <declare-styleable name="CalendarView">
 
-        <!-- *****************************通用属性***************************** -->
-        <!-- 头部，包名+类型 -->
+        <!-- *****************************通用屬性*************** ************** -->
+        <!-- 頭部，包名+類型 -->
         <attr name="header_view" format="string" />
-        <!-- 星期标题颜色 -->
+        <!-- 星期標題顏色 -->
         <attr name="week_title_color" format="color|reference" />
-        <!-- 星期标题字体大小 -->
+        <!-- 星期標題字體大小 -->
         <attr name="week_title_font_size" format="dimension" />
-        <!-- 星期标题，以顿号分割，如：一、二、三、四、五、六、日。起始星期为星期一 -->
+        <!-- 星期標題，以頓號分割，如：一、二、三、四、五、六、日。 起始星期為星期一 -->
         <attr name="week_title_label" format="string" />
-        <!-- 一周的第一天，1表示星期一，2表示星期二，7表示星期天，注！！！：设置了first_day_of_week，需要同时设置week_title_label -->
+        <!-- 一週的第一天，1表示星期一，2表示星期二，7表示星期天，註！ ！ ！ ：設定了first_day_of_week，需要同時設定week_title_label -->
         <attr name="first_day_of_week" format="integer" />
-        <!-- 日期字体大小 -->
+        <!-- 日期字體大小 -->
         <attr name="day_font_size" format="dimension" />
-        <!-- 默认文字颜色 -->
+        <!-- 預設文字顏色 -->
         <attr name="default_color" format="color|reference" />
-        <!-- 默认文字灰色 -->
+        <!-- 預設文字灰色 -->
         <attr name="default_dim_color" format="color|reference" />
-        <!-- 周未颜色 -->
+        <!-- 週未顏色 -->
         <attr name="weekend_color" format="color|reference" />
-        <!-- 选中背景色 -->
+        <!-- 選取背景色 -->
         <attr name="selected_bg_color" format="color|reference" />
-        <!-- 选中day颜色 -->
+        <!-- 選取day顏色 -->
         <attr name="selected_day_color" format="color|reference" />
-        <!-- 范围选择或者按星期选择的日历时，该日期不能选择，但在范围或者星期之间 -->
+        <!-- 範圍選擇或按星期選擇的日曆時，該日期不能選擇，但在範圍或星期之間 -->
         <attr name="selected_day_dim_color" format="color|reference" />
 
-        <!-- *****************************日期范围相关属性***************************** -->
-        <!-- 选中区间背景色，开始与结束之间的日期 -->
+        <!-- *****************************日期範圍相關屬性************* **************** -->
+        <!-- 選取區間背景色，開始與結束之間的日期 -->
         <attr name="selected_range_bg_color" format="color|reference" />
-        <!-- 选中区间字体颜色，开始与结束之间的日期 -->
+        <!-- 選取區間字體顏色，開始與結束之間的日期 -->
         <attr name="selected_range_day_color" format="color|reference" />
-        <!-- 开始日期背景色 -->
+        <!-- 開始日期背景色 -->
         <attr name="selected_start_bg_color" format="color|reference" />
-        <!-- 开始日期字体颜色 -->
+        <!-- 開始日期字體顏色 -->
         <attr name="selected_start_day_color" format="color|reference" />
-        <!-- 结束日期背景色 -->
+        <!-- 結束日期背景色 -->
         <attr name="selected_end_bg_color" format="color|reference" />
-        <!-- 结束日期字体颜色 -->
+        <!-- 結束日期字體顏色 -->
         <attr name="selected_end_day_color" format="color|reference" />
     </declare-styleable>
 </resources>

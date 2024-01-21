@@ -41,7 +41,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_40">
 
             <chun.com.tw.goodeat.View.SingleCalendarView
                 android:id="@+id/calendar_view"
@@ -51,7 +52,28 @@
                 app:layout_constraintLeft_toLeftOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-        
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="@dimen/distance_30"
+            android:text="@string/dietcalendar_msg"
+            android:textColor="@color/FF16461b"
+            android:textSize="@dimen/txtsize_18"/>
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_20"
+            android:layout_marginLeft="@dimen/distance_20"
+            android:layout_marginRight="@dimen/distance_20"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape"/>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

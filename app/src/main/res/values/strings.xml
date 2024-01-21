@@ -185,5 +185,17 @@
         會一步步教你!
     </string>
 
+    <string name="dietcalendar_msg">
+        ♥ 愛心是生理期時的標記 \n
+        點進去就可以為自己寫下紀錄囉!
+    </string>
 
+    <string name="menstruationlog">紀錄月經</string>
+    <string name="diarylook">每天日記總覽</string>
+
+    <string name="bloodvolume">今天血量</string>
+    <string name="bloodcolor">今天血色</string>
+    <string name="paintoday">今天痛感</string>
+    <string name="weighttoday">今天體重</string>
+    <string name="feel">今天心情</string>
 </resources>

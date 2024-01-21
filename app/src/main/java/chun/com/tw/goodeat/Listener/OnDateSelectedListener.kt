@@ -2,10 +2,8 @@ package chun.com.tw.goodeat.Listener
 
 import chun.com.tw.goodeat.Bean.DateInfo
 
-/**
- * 选中日期，日历控件内部使用
- * Created by han on 2023/4/12.
- */
+
+ //选中日期，日历控件内部使用
 internal interface OnDateSelectedListener {
 
     /**

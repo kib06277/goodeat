@@ -12,7 +12,7 @@ abstract class BaseHeaderView(
     attrs: AttributeSet?
 ) : FrameLayout(context, attrs) {
 
-    // 左右间距
+    // 左右間距
     private var padding: Int = 0
     lateinit var rootView: ViewGroup
 
@@ -64,8 +64,9 @@ abstract class BaseHeaderView(
      */
     open fun setPadding() {
         //每一個格子大小除以 2 ，取得第一格 X 軸中心位置
-        padding = measuredWidth / Const.COLUMNS_PER_WEEK / 2
-        rootView.setPadding(padding, 0, padding, 0)
+        //padding = measuredWidth / Const.COLUMNS_PER_WEEK / 2
+        //rootView.setPadding(padding, 0, padding, 0)
+        rootView.setPadding(0, 0, 0, 0)
     }
 
     interface HeaderViewListener {

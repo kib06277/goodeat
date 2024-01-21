@@ -56,15 +56,15 @@ object Util {
      * 设置控件属性
      */
     private fun setViewAttr(context: Context, viewAttrs: ViewAttrs, typedArray: TypedArray) {
-        viewAttrs.weekTitleColor = typedArray.getColor(R.styleable.CalendarView_week_title_color, Color.parseColor("#666666"))
+        viewAttrs.weekTitleColor = typedArray.getColor(R.styleable.CalendarView_week_title_color, Color.parseColor("#FFFF0000"))
         viewAttrs.defaultColor = typedArray.getColor(R.styleable.CalendarView_default_color, Color.parseColor("#666666"))
         viewAttrs.defaultDimColor = typedArray.getColor(R.styleable.CalendarView_default_dim_color, Color.parseColor("#D3D3D3"))
         viewAttrs.weekendColor = typedArray.getColor(R.styleable.CalendarView_weekend_color, Color.parseColor("#3568B9"))
         viewAttrs.selectedBgColor = typedArray.getColor(R.styleable.CalendarView_selected_bg_color, Color.parseColor("#0037A6"))
         viewAttrs.selectedDayColor = typedArray.getColor(R.styleable.CalendarView_selected_day_color, Color.parseColor("#FFFFFF"))
         viewAttrs.selectedDayDimColor = typedArray.getColor(R.styleable.CalendarView_selected_day_dim_color, Color.parseColor("#4DFFFFFF"))
-        viewAttrs.dayFontSize = typedArray.getDimension(R.styleable.CalendarView_day_font_size, dp2px(context, 16f))
-        viewAttrs.weekTitleFontSize = typedArray.getDimension(R.styleable.CalendarView_week_title_font_size, dp2px(context, 16f))
+        viewAttrs.dayFontSize = typedArray.getDimension(R.styleable.CalendarView_day_font_size, dp2px(context, 10f))
+        viewAttrs.weekTitleFontSize = typedArray.getDimension(R.styleable.CalendarView_week_title_font_size, dp2px(context, 18f))
         viewAttrs.weekTitleLabel = typedArray.getString(R.styleable.CalendarView_week_title_label)
         viewAttrs.headerView = typedArray.getString(R.styleable.CalendarView_header_view)
         viewAttrs.firstDayOfWeek = typedArray.getInt(R.styleable.CalendarView_first_day_of_week, 1);
@@ -82,7 +82,7 @@ object Util {
                 headerView = constructor.newInstance(context) as BaseHeaderView
             } catch (e: Exception) {
                 e.printStackTrace()
-                throw RuntimeException("header_view 必须是 com.hdev.calendar.base.BaseHeaderView子类")
+                throw RuntimeException("header_view 必须是 chun.com.tw.goodest.base.BaseHeaderView子类")
             }
         }
         if (headerView == null) {

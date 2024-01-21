@@ -10,7 +10,6 @@ import java.util.Calendar
 
 /**
  * 多选月份View
- * Created by han on 2023/4/27.
  */
 internal class MultiMonthView(
     context: Context,

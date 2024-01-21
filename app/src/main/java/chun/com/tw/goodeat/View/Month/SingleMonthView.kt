@@ -9,7 +9,6 @@ import java.util.*
 
 /**
  * 默认单选月份View
- * Created by han on 2023/4/10.
  */
 internal open class SingleMonthView(
     context: Context,

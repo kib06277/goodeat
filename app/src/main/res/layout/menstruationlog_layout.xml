@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/FFe5d6c4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/page_title_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/login_shape"
+        android:layout_marginTop="@dimen/distance_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/distance_5"
+            android:text="@string/menstruationlog"
+            android:textColor="@color/FF16461b"
+            android:textSize="@dimen/txtsize_18"/>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/FFd8d9d9"
+            android:layout_marginTop="@dimen/distance_5"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/distance_5"
+            android:text="2023/12/08"
+            android:textColor="@color/FF16461b"
+            android:textSize="@dimen/txtsize_18"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bloodvolume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/bloodvolume"
+                android:textColor="@color/FF16461b"
+                android:textSize="@dimen/txtsize_18"/>
+
+            <RatingBar
+                android:id="@+id/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="5"
+                android:numStars="6"
+                style="@style/CustomRatingBarStyle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bloodcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/bloodcolor"
+                android:textColor="@color/FF16461b"
+                android:textSize="@dimen/txtsize_18"/>
+
+            <ImageView
+                android:id="@+id/love4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/distance_5"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/love4" />
+
+            <ImageView
+                android:id="@+id/love4_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/distance_5"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/circle" />
+
+            <ImageView
+                android:id="@+id/love3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/distance_5"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/love3" />
+
+            <ImageView
+                android:id="@+id/love3_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/distance_5"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/circle" />
+
+            <ImageView
+                android:id="@+id/love2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/distance_5"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/love2" />
+
+            <ImageView
+                android:id="@+id/love42_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/distance_5"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/circle" />
+
+            <ImageView
+                android:id="@+id/love1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/distance_5"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/love1" />
+
+            <ImageView
+                android:id="@+id/love1_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/distance_5"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/circle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/paintoday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/paintoday"
+                android:textColor="@color/FF16461b"
+                android:textSize="@dimen/txtsize_18"/>
+
+            <ImageView
+                android:id="@+id/mildpain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/distance_5"
+                app:srcCompat="@mipmap/mildpain" />
+
+            <SeekBar
+                android:id="@+id/seekBar_pain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/distance_5"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/severepain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/distance_5"
+                app:srcCompat="@mipmap/severepain" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/weighttoday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/weighttoday"
+                android:textColor="@color/FF16461b"
+                android:textSize="@dimen/txtsize_18"/>
+
+            <EditText
+                android:id="@+id/weight_keyin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/distance_5"
+                android:gravity="right"
+                android:hint="kg"
+                android:textSize="@dimen/txtsize_18"
+                android:ems="6"
+                android:background="@drawable/keyin_shape"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/feel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/paintoday"
+                android:textColor="@color/FF16461b"
+                android:textSize="@dimen/txtsize_18"/>
+
+            <SeekBar
+                android:id="@+id/seekBar_feel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/distance_5"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/distance_5"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/smile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/distance_20"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/smile" />
+
+            <ImageView
+                android:id="@+id/sad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/distance_20"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/sad" />
+
+            <ImageView
+                android:id="@+id/angry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/angry" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_30"
+            android:layout_marginLeft="@dimen/distance_20"
+            android:layout_marginRight="@dimen/distance_20"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

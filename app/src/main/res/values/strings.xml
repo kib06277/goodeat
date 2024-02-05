@@ -29,6 +29,7 @@
     <string name="reserve">預約跟進</string>
     <string name="portionsize">飲食份量</string>
     <string name="aboutwe">關於我們</string>
+    <string name="eattime">早餐/午餐/晚餐/額外</string>
 
     <string name="username">姓名</string>
     <string name="phone">電話</string>
@@ -198,4 +199,73 @@
     <string name="paintoday">今天痛感</string>
     <string name="weighttoday">今天體重</string>
     <string name="feel">今天心情</string>
+
+    <string name="servingsize">今日攝取份量</string>
+    <string name="mainfood">8主</string>
+    <string name="meat1">6肉</string>
+    <string name="vegetables">3菜</string>
+    <string name="fruit">2果</string>
+    <string name="Moisture">一天水分的攝取量</string>
+    <string name="ml">ml</string>
+    <string name="breakfast">早餐</string>
+    <string name="allkindsportionsize">_主_肉_菜_果</string>
+    <string name="Lunch">午餐</string>
+    <string name="dinner">晚餐</string>
+    <string name="other_eat">額外</string>
+    <string name="sports">運動</string>
+    <string name="remaining_portion">你剩下以下份量</string>
+    <string name="Dietblindspots">導師寫關於您的飲食盲點</string>
+
+    <string name="foodimg">食物的照片呈現區 \n (最多 6 張)</string>
+    <string name="uploadimg"><u>上傳照片</u></string>
+    <string name="foodname">名稱</string>
+    <string name="portionsize_eatinfo">份量</string>
+    <string name="dietary_judgment">建立飲食判斷力</string>
+    <string name="writemoisture">水分總攝取量</string>
+    <string name="excretion">排便</string>
+    <string name="haveexcretion">有排</string>
+    <string name="noexcretion">無排</string>
+    <string name="other_eatnfo">其他</string>
+    <string name="diarrhea">(如肚瀉)</string>
+    <string name="powerspeech">給自己一句有力量的話</string>
+
+    <string name="messageboard_details_title">最新飲食計畫</string>
+    <string name="messageboard_details_item">主食類食物不要和油摻和再一起</string>
+    <string name="messageboard_details_msg">米、麵等主食類食物吸水效果非常好，舉例當你把滷肉汁淋到白飯上時，一下子肉汁就會滲入到米粒當中，飯吃起來馬上就會變鹹。同樣的道理，如果你用油炒麵或炒飯，或把油蔥、肉燥汁淋到飯或麵上，米飯和麵條也會馬上吸入這些油脂。一碗白飯熱量為 280 大卡，但油脂一湯匙就有半碗飯的熱量，一盤炒飯若飯多、油多，再加上一大堆其他配料，那麼熱量動輒七、八百大卡也就不難理解了。</string>
+
+    <string name="week1">07/01 \n (一)</string>
+    <string name="week2">07/02 \n (二)</string>
+    <string name="week3">07/03 \n (三)</string>
+    <string name="week4">07/04 \n (四)</string>
+    <string name="week5">07/05 \n (五)</string>
+    <string name="week6">07/06 \n (六)</string>
+    <string name="week7">07/07 \n (日)</string>
+
+    <string name="msg">MSG</string>
+    <string name="phonecall">PHONE CALL</string>
+    <string name="breakfast_time">9-10：00am</string>
+    <string name="Lunch_time">11-12：00am</string>
+    <string name="dinner_time">13-14：00am</string>
+    <string name="reserve_button">預約</string>
+    <string name="reserve_msg">您尚餘 20 次與飯友聊天唷!</string>
+    <string name="coming">即將到來</string>
+    <string name="finish">已經完成</string>
+    <string name="coming_time">
+        2023-12-20 \n
+        13-13:30 pm \n
+        MSG
+    </string>
+    <string name="finish_time">
+        2023-12-06 \n
+        13-13:30 pm \n
+        MSG
+    </string>
+    <string name="change_reserve"><u>更改預約</u></string>
+    <string name="attend">出席</string>
+    <string name="reserve_msg2">
+        貼心提醒：24 小時前可更改預約 \n
+        24 小時候就無法更改囉!
+    </string>
+    <string name="permission_necessary">需要權限</string>
 </resources>
+

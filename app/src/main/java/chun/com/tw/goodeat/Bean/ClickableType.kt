@@ -6,17 +6,17 @@ package chun.com.tw.goodeat.Bean
 enum class ClickableType {
 
     /**
-     * 设置了可点击，日历只包含可点击日期
+     * 設置了可点击，日历只包含可点击日期
      */
     CLICKABLE,
 
     /**
-     * 设置了不可点击，日历包含不可点击的日期
+     * 設置了不可点击，日历包含不可点击的日期
      */
     UN_CLICKABLE,
 
     /**
-     * 未设置点击或者可击
+     * 未設置点击或者可击
      */
     NORMAL
 }

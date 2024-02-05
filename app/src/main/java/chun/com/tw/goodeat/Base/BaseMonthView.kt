@@ -1,15 +1,18 @@
 package chun.com.tw.goodeat.Base
 
 import android.content.Context
+import android.graphics.BitmapFactory
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.view.MotionEvent
 import android.view.View
+import androidx.core.content.ContextCompat
 import chun.com.tw.goodeat.Bean.ClickableType
 import chun.com.tw.goodeat.Bean.DateInfo
 import chun.com.tw.goodeat.Bean.DateItem
 import chun.com.tw.goodeat.Bean.ViewAttrs
 import chun.com.tw.goodeat.Listener.OnDateSelectedListener
+import chun.com.tw.goodeat.R
 import chun.com.tw.goodeat.Util.DateUtil
 import java.util.*
 
@@ -63,6 +66,11 @@ abstract class BaseMonthView (
     // 日期選中回調
     internal var onDateSelectedListener: OnDateSelectedListener? = null
 
+    val bitmap = BitmapFactory.decodeResource(resources, R.mipmap.calendarlove)
+    var number = 0
+    private var x = 0f
+    private var y = 0f
+
     override fun onDraw(canvas: Canvas) {
         initData()
         // 绘制高亮
@@ -110,7 +118,14 @@ abstract class BaseMonthView (
      * 繪製日期
      */
     private fun drawDays(canvas: Canvas?) {
-        dateItemList.forEach { drawDay(canvas, it) }
+        //繪製背景
+        val color = ContextCompat.getColor(context, R.color.FFe5d6c4)
+        canvas?.drawColor(color)
+
+        //繪製文字
+        dateItemList.forEach {
+            drawDay(canvas, it)
+        }
     }
 
     /**
@@ -123,8 +138,21 @@ abstract class BaseMonthView (
         if (!handleSelectedDate) {
             // 設置話題颜色
             setMainPaintColor(dateItem)
+
             // 繪製普通文本
             drawDayText(canvas, dateItem, mainPaint)
+
+//            //繪製愛心
+//            canvas?.drawBitmap(bitmap, x, y, mainPaint)
+//
+//            if(number < 6 ){
+//                x += 150f
+//                number++
+//            } else {
+//                y += 150f
+//                x = 50f
+//                number = 0
+//            }
         }
     }
 

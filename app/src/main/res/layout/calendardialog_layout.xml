@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:text="@string/menstruationlog"
         android:textSize="@dimen/txtsize_18"
+        android:textColor="@color/black"
         android:layout_margin="@dimen/distance_20"
         app:layout_constraintLeft_toRightOf="@+id/transparentlove"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -42,6 +43,7 @@
         android:layout_height="wrap_content"
         android:text="@string/diarylook"
         android:textSize="@dimen/txtsize_18"
+        android:textColor="@color/black"
         android:layout_marginTop="@dimen/distance_30"
         android:layout_marginLeft="@dimen/distance_20"
         app:layout_constraintLeft_toRightOf="@+id/calendar"

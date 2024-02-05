@@ -393,7 +393,7 @@
 
             <TextView
                 android:id="@+id/side"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
@@ -404,7 +404,7 @@
 
             <TextView
                 android:id="@+id/front"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
@@ -415,7 +415,7 @@
 
             <TextView
                 android:id="@+id/reverse"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"

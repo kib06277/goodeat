@@ -5,6 +5,7 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.FrameLayout
+import androidx.core.view.marginTop
 import chun.com.tw.goodeat.Constant.Const
 
 abstract class BaseHeaderView(

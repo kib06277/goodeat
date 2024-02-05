@@ -3,22 +3,19 @@ package chun.com.tw.goodeat.Util
 import android.content.Context
 import android.graphics.PointF
 import android.graphics.RectF
+import android.util.Log
 import chun.com.tw.goodeat.Bean.DateInfo
 import chun.com.tw.goodeat.Bean.DateItem
 import chun.com.tw.goodeat.Constant.Const
 import java.util.*
 
-/**
- * Date util
- * Created by han on 2023/4/6.
- */
 object DateUtil {
 
     /**
-     * 检查当前日期是否为今天
-     * @param systemDate 系统日期
-     * @param monthDate 当前月份的年月信息
-     * @param day 当前月份的日子
+     * 檢查目前日期是否為今天
+     * @param systemDate 系統日期
+     * @param monthDate 目前月份的年月訊息
+     * @param day 當月的日子
      */
     fun isToday(systemDate: Calendar, monthDate: Calendar, day: Int): Boolean {
         if (systemDate == null || monthDate == null) {
@@ -31,13 +28,13 @@ object DateUtil {
     }
 
     /**
-     * 是否为过去的日期
+     * 是否為過去的日期
      * @param minDate 最小值
-     * @param monthDate 当前月份的年月信息
-     * @param day 当前月份的日子
+     * @param monthDate 目前月份的年月訊息
+     * @param day 當月的日子
      */
     fun isPastDays(minDate: Calendar, monthDate: Calendar, day: Int): Boolean {
-        // 年月相等，日子小于最小日子
+        // 年月相等，日子小於最小日子
         if (minDate.get(Calendar.YEAR) == monthDate.get(Calendar.YEAR)
             && minDate.get(Calendar.MONTH) == monthDate.get(Calendar.MONTH)
             && day < minDate.get(Calendar.DAY_OF_MONTH)) {
@@ -186,15 +183,14 @@ object DateUtil {
                 textCenterTop += cellHeight
             }
             // 点击区域
-            val clickBounds = RectF(textCenterLeft - halfBox, textCenterTop - halfBox,
-                textCenterLeft + halfBox, textCenterTop + halfBox)
+            val clickBounds = RectF(textCenterLeft - halfBox, textCenterTop - halfBox, textCenterLeft + halfBox, textCenterTop + halfBox)
             // 文本绘制坐标
             val drawPoint = PointF(textDrawLeft, textDrawTop)
             // 中心坐标
             val centerPoint = PointF(textCenterLeft, textCenterTop)
+
             // 格子区域
-            var cellBounds = RectF(cellLeft, textCenterTop - halfBox,
-                cellLeft + cellWidth, textCenterTop + halfBox)
+            var cellBounds = RectF(cellLeft, textCenterTop - halfBox, cellLeft + cellWidth, textCenterTop + halfBox)
 
             var dateItem = DateItem(date, drawPoint, centerPoint, clickBounds, cellBounds)
 
@@ -213,7 +209,7 @@ object DateUtil {
         var week = 1
         for (index in dateItemList.indices) {
             var dateItem = dateItemList[index]
-            // 设置每第一星期(即每一行)包括的dateItem
+            // 設置每第一星期(即每一行)包括的dateItem
             if (index % Const.COLUMNS_PER_WEEK == 0) {
                 tmpDateItemList = mutableListOf()
                 weekMap[week] = tmpDateItemList
@@ -230,7 +226,7 @@ object DateUtil {
     fun calcWeekCount(dateList: List<DateInfo>): Int {
         var week = 0
         for (index in dateList.indices) {
-            // 设置每第一星期(即每一行)包括的dateItem
+            // 設置每第一星期(即每一行)包括的dateItem
             if (index % Const.COLUMNS_PER_WEEK == 0) {
                 week++
             }
@@ -241,7 +237,7 @@ object DateUtil {
     /**
      * 构建月份日期
      * @param timeInMillis 日历时间戳
-     * @param theFirstDayOfWeek 用户设置一周的第一天是星期几，默认为1
+     * @param theFirstDayOfWeek 用户設置一周的第一天是星期几，默认为1
      */
     fun buildDateList(timeInMillis: Long, theFirstDayOfWeek: Int = 1): List<DateInfo> {
         var calendar = Calendar.getInstance()
@@ -294,7 +290,7 @@ object DateUtil {
         if (fixDays != 0) {
             val calendar = Calendar.getInstance()
             calendar.timeInMillis = timeInMillis
-            // 设置上一月份
+            // 設置上一月份
             calendar[Calendar.MONTH] = calendar[Calendar.MONTH] - 1
             val daysOfMonth = getDaysOfMonth(calendar.timeInMillis)
             val year = calendar[Calendar.YEAR]
@@ -317,7 +313,7 @@ object DateUtil {
         if (fixDays != 7) {
             val calendar = Calendar.getInstance()
             calendar.timeInMillis = timeInMillis
-            // 设置下一月份
+            // 設置下一月份
             calendar[Calendar.MONTH] = calendar[Calendar.MONTH] + 1
             val year = calendar[Calendar.YEAR]
             val month = calendar[Calendar.MONTH] + 1
@@ -411,7 +407,7 @@ object DateUtil {
             calendar.add(Calendar.DAY_OF_MONTH, -1)
         }
 
-        // 设置一个星期的第一天，一个星期的第一天是星期一
+        // 設置一个星期的第一天，一个星期的第一天是星期一
         calendar.firstDayOfWeek = Calendar.MONDAY
         // 获得当前日期是一个星期的第几天
         val day = calendar[Calendar.DAY_OF_WEEK]

@@ -2,7 +2,6 @@ package chun.com.tw.goodeat.View
 
 import android.content.Context
 import android.widget.TextView
-import chun.com.tw.goodeat.Base.DefaultHeaderView
 import chun.com.tw.goodeat.Bean.DateInfo
 import chun.com.tw.goodeat.Listener.IDateRange
 import chun.com.tw.goodeat.R

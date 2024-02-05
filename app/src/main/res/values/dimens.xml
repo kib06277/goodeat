@@ -11,6 +11,7 @@
     <dimen name="distance_40">40dp</dimen>
     <dimen name="distance_45">45dp</dimen>
     <dimen name="distance_50">50dp</dimen>
+    <dimen name="distance_55">55dp</dimen>
 
     <dimen name="txtsize_8">8sp</dimen>
     <dimen name="txtsize_12">12sp</dimen>

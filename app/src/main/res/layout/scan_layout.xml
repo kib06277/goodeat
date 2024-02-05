@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:text="@string/selectgallery"
         android:textSize="@dimen/txtsize_18"
+        android:textColor="@color/black"
         android:layout_margin="@dimen/distance_20"
         app:layout_constraintLeft_toRightOf="@+id/imgupload"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -42,6 +43,7 @@
         android:layout_height="wrap_content"
         android:text="@string/scan"
         android:textSize="@dimen/txtsize_18"
+        android:textColor="@color/black"
         android:layout_marginTop="@dimen/distance_30"
         android:layout_marginLeft="@dimen/distance_20"
         app:layout_constraintLeft_toRightOf="@+id/scanimg"
@@ -62,6 +64,7 @@
         android:layout_height="wrap_content"
         android:text="@string/reimg"
         android:textSize="@dimen/txtsize_18"
+        android:textColor="@color/black"
         android:layout_marginTop="@dimen/distance_30"
         android:layout_marginLeft="@dimen/distance_20"
         app:layout_constraintLeft_toRightOf="@+id/imgdelete"

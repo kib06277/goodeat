@@ -7,7 +7,6 @@ import android.view.View
 
 /**
  * 星期基礎類別
- * Created by han on 2023/4/6.
  */
 abstract class BaseWeekView(
     context: Context,

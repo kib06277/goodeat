@@ -4,6 +4,7 @@ import android.content.Context
 import android.graphics.Color
 import android.util.AttributeSet
 import android.widget.LinearLayout
+import androidx.core.view.marginTop
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener
 import chun.com.tw.goodeat.Adapter.CalendarAdapter
@@ -13,6 +14,7 @@ import chun.com.tw.goodeat.Bean.ViewAttrs
 import chun.com.tw.goodeat.R
 import chun.com.tw.goodeat.Util.Util
 import chun.com.tw.goodeat.View.BaseHeaderView
+import chun.com.tw.goodeat.View.WeekTitleView
 import java.util.*
 
 /**
@@ -166,6 +168,7 @@ abstract class BaseCalendarView(
     private fun initWeekView() {
         weekTitleView = WeekTitleView(context, viewAttrs)
         weekTitleView.padding = padding
+
         addView(weekTitleView)
     }
 
@@ -181,7 +184,7 @@ abstract class BaseCalendarView(
     }
 
     /**
-     * 设置日期範圍
+     * 設置日期範圍
      * @param startTimeInMillis 開始日期，單位：毫秒
      * @param endTimeInMillis 结束日期，單位：毫秒
      * @param selectedTimeInMillis 當前日期，單位：毫秒

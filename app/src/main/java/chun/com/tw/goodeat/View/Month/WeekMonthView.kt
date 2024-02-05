@@ -10,7 +10,11 @@ import chun.com.tw.goodeat.Util.Util
 import java.util.*
 
 /**
+<<<<<<< Updated upstream
  * 月份View，可选中某一星期
+=======
+ * 月份 View，可選中某一星期
+>>>>>>> Stashed changes
  */
 internal class WeekMonthView(
     context: Context,
@@ -19,28 +23,28 @@ internal class WeekMonthView(
     viewAttrs: ViewAttrs,
 ) : SingleMonthView(context, monthDate, positionInCalendar, viewAttrs) {
 
-    // 选中的日子(selectedDate)所在的星期的第一天
+    // 選取的日子(selectedDate)所在的星期的第一天
     var startDateItem: DateItem? = null
         private set
-    // 选中的日子(selectedDate)所在的星期的最后一天
+    // 選取的日子(selectedDate)所在的星期的最後一天
     var endDateItem: DateItem? = null
         private set
-    // 圆角
+    // 圓角
     private var roundCorners: Float = Util.dp2px(context, 30f)
-    // 某一周的dateItem
+    // 某一周的 dateItem
     private var weekDateItemList: List<DateItem>? = null
 
     override fun afterDataInit() {
         super.afterDataInit()
-        // 数据初始化完毕后，计算开始和结束日期
+        // 資料初始化完畢後，計算開始和結束日期
         selectedDateItem?.let { calcStartAndEndDate(it) }
     }
 
     /**
-     * 绘制选中日期
+     * 繪製選取日期
      */
     override fun drawSelectedDay(canvas: Canvas?, dateItem: DateItem): Boolean {
-        // 本月份的日子才绘制高亮
+        // 本月份的日子才繪製高亮
         if (selectedDateItem?.date?.type == DateInfo.DateType.CURRENT) {
             weekDateItemList?.let { dataItemList ->
                 if (dataItemList.contains(dateItem)) {
@@ -58,11 +62,11 @@ internal class WeekMonthView(
     }
 
     /**
-     * 绘制选中背景
+     * 繪製選中背景
      */
     override fun drawSelectedBg(canvas: Canvas?) {
         if (selectedDateItem?.date?.type == DateInfo.DateType.CURRENT) {
-            // 本月份的日子才绘制高亮
+            // 本月份的日子才繪製高亮
             if (startDateItem != null && endDateItem != null) {
                 selectedPaint.color = viewAttrs.selectedBgColor
                 canvas?.drawRoundRect(startDateItem!!.clickBounds.left, startDateItem!!.clickBounds.top,
@@ -72,7 +76,7 @@ internal class WeekMonthView(
     }
 
     /**
-     * 选中日期，WeekCalendarView.onDateSelected()，再调用本类的updateByDateSelected
+     * 選取日期，WeekCalendarView.onDateSelected()，再呼叫本類別的 updateByDateSelected
      */
     override fun onDateSelected(selectedDateItem: DateItem, changeMonth: Boolean, monthPosition: Int) {
         calcStartAndEndDate(selectedDateItem)
@@ -80,7 +84,7 @@ internal class WeekMonthView(
     }
 
     /**
-     * 选中的日期是所在的星期，获取该星期的的起始和结束日期
+     * 選取的日期是所在的星期，取得該星期的起始和結束日期
      */
     private fun calcStartAndEndDate(selectedDateItem: DateItem) {
         weekMap.values.filter {
@@ -97,7 +101,7 @@ internal class WeekMonthView(
     }
 
     /**
-     * 根据选中的日期，更新界面
+     * 根據選中的日期，更新介面
      */
     override fun updateByDateSelected(isCurrentMonth: Boolean, dateInfo: DateInfo) {
         super.updateByDateSelected(isCurrentMonth, dateInfo)

@@ -11,10 +11,9 @@
         android:id="@+id/title"
         layout="@layout/page_title_layout"/>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:orientation="vertical"
         android:background="@drawable/login_shape"
         android:layout_marginTop="@dimen/distance_10"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -22,471 +21,480 @@
         app:layout_constraintTop_toBottomOf="@+id/title"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <TextView
-            android:id="@+id/schedule_sports"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginTop="@dimen/distance_5"
-            android:text="@string/schedule_sports"
-            android:textColor="@color/FF16461b"
-            android:textSize="@dimen/txtsize_18"/>
-
-        <View
-            android:id="@+id/line"
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="@color/FFd8d9d9"
-            android:layout_marginTop="@dimen/distance_5"/>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/distance_10">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/sleep"
+                android:id="@+id/schedule_sports"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/distance_5"
+                android:text="@string/schedule_sports"
+                android:textColor="@color/FF16461b"
+                android:textSize="@dimen/txtsize_18"/>
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/FFd8d9d9"
+                android:layout_marginTop="@dimen/distance_5"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/distance_10">
+
+                <TextView
+                    android:id="@+id/sleep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sleep"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/distance_10"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <Spinner
+                    android:id="@+id/sleep_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_10"
+                    android:background="@drawable/keyin_shape"
+                    android:textSize="@dimen/txtsize_18"
+                    app:layout_constraintLeft_toRightOf="@+id/sleep"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/ampm_sleep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ampm"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/distance_10"
+                    app:layout_constraintLeft_toRightOf="@+id/sleep_spinner"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/getup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/getup"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/distance_20"
+                    android:layout_marginLeft="@dimen/distance_10"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sleep"/>
+
+                <Spinner
+                    android:id="@+id/getup_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/distance_5"
+                    android:layout_marginLeft="@dimen/distance_10"
+                    android:background="@drawable/keyin_shape"
+                    android:textSize="@dimen/txtsize_18"
+                    app:layout_constraintLeft_toRightOf="@+id/getup"
+                    app:layout_constraintTop_toBottomOf="@+id/sleep_spinner"/>
+
+                <TextView
+                    android:id="@+id/ampm_getup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ampm"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/distance_20"
+                    android:layout_marginLeft="@dimen/distance_10"
+                    app:layout_constraintLeft_toRightOf="@+id/getup_spinner"
+                    app:layout_constraintTop_toBottomOf="@+id/ampm_sleep"/>
+
+                <TextView
+                    android:id="@+id/sleephours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sleephours"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/distance_20"
+                    android:layout_marginLeft="@dimen/distance_10"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/getup"/>
+
+                <Spinner
+                    android:id="@+id/sleephours_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/distance_5"
+                    android:layout_marginLeft="@dimen/distance_10"
+                    android:background="@drawable/keyin_shape"
+                    android:textSize="@dimen/txtsize_18"
+                    app:layout_constraintLeft_toRightOf="@+id/sleephours"
+                    app:layout_constraintTop_toBottomOf="@+id/getup_spinner"/>
+
+                <TextView
+                    android:id="@+id/hrs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hrs"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/distance_20"
+                    android:layout_marginLeft="@dimen/distance_10"
+                    app:layout_constraintLeft_toRightOf="@+id/sleephours_spinner"
+                    app:layout_constraintTop_toBottomOf="@+id/ampm_getup"/>
+
+                <TextView
+                    android:id="@+id/exercisehabits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/exercisehabits"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/distance_25"
+                    android:layout_marginLeft="@dimen/distance_10"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sleephours"/>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/distance_15"
+                    android:layout_marginLeft="@dimen/distance_10"
+                    app:layout_constraintLeft_toRightOf="@+id/exercisehabits"
+                    app:layout_constraintTop_toBottomOf="@+id/sleephours">
+
+                    <TextView
+                        android:id="@+id/family_medicalhistory_have"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/have"
+                        android:textSize="@dimen/txtsize_18"
+                        android:textStyle="bold"
+                        android:textColor="@color/FF16461b"/>
+
+                    <ImageView
+                        android:id="@+id/family_medicalhistory_have_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/distance_5"
+                        android:layout_marginRight="@dimen/distance_5"
+                        app:srcCompat="@mipmap/circle" />
+
+                    <TextView
+                        android:id="@+id/family_medicalhistory_none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/none"
+                        android:textSize="@dimen/txtsize_18"
+                        android:textStyle="bold"
+                        android:textColor="@color/FF16461b"/>
+
+                    <ImageView
+                        android:id="@+id/family_medicalhistory_none_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/distance_5"
+                        android:layout_marginRight="@dimen/distance_5"
+                        app:srcCompat="@mipmap/circle" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/project"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/distance_10"
+                    app:layout_constraintLeft_toLeftOf="@+id/LinearLayout"
+                    app:layout_constraintTop_toBottomOf="@+id/LinearLayout"/>
+
+                <EditText
+                    android:id="@+id/project_keyin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/distance_5"
+                    android:layout_marginLeft="@dimen/distance_5"
+                    android:layout_marginRight="@dimen/distance_50"
+                    android:layout_gravity="center"
+                    android:background="@drawable/keyin_shape"
+                    android:textSize="@dimen/txtsize_18"
+                    android:inputType="text"
+                    app:layout_constraintLeft_toRightOf="@+id/project"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/LinearLayout"/>
+
+                <TextView
+                    android:id="@+id/week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/week"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/distance_25"
+                    app:layout_constraintLeft_toLeftOf="@+id/project"
+                    app:layout_constraintTop_toBottomOf="@+id/project"/>
+
+                <EditText
+                    android:id="@+id/weekmonth_keyin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_5"
+                    android:layout_marginTop="@dimen/distance_5"
+                    android:layout_gravity="center"
+                    android:background="@drawable/keyin_shape"
+                    android:textSize="@dimen/txtsize_18"
+                    android:inputType="text"
+                    app:layout_constraintLeft_toRightOf="@+id/week"
+                    app:layout_constraintRight_toRightOf="@+id/everydaypee"
+                    app:layout_constraintTop_toBottomOf="@+id/project_keyin"/>
+
+                <TextView
+                    android:id="@+id/frequency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/frequency"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/distance_15"
+                    app:layout_constraintLeft_toRightOf="@+id/weekmonth_keyin"
+                    app:layout_constraintTop_toBottomOf="@+id/project_keyin"/>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@+id/frequency"
+                    app:layout_constraintTop_toTopOf="@+id/frequency"/>
+
+                <EditText
+                    android:id="@+id/time_keyin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/distance_5"
+                    android:layout_gravity="center"
+                    android:background="@drawable/keyin_shape"
+                    android:textSize="@dimen/txtsize_18"
+                    android:inputType="text"
+                    app:layout_constraintLeft_toRightOf="@+id/time"
+                    app:layout_constraintRight_toRightOf="@+id/project_keyin"
+                    app:layout_constraintTop_toBottomOf="@+id/project_keyin"/>
+
+                <TextView
+                    android:id="@+id/hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hour"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@+id/time_keyin"
+                    app:layout_constraintTop_toTopOf="@+id/time"/>
+
+                <TextView
+                    android:id="@+id/everydefecation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/everydefecation"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/distance_25"
+                    android:layout_marginLeft="@dimen/distance_10"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/week"/>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout_everydefecation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/distance_5"
+                    android:layout_marginTop="@dimen/distance_15"
+                    app:layout_constraintLeft_toRightOf="@+id/everydefecation"
+                    app:layout_constraintTop_toBottomOf="@+id/week">
+
+                    <TextView
+                        android:id="@+id/everydefecation_have"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/have"
+                        android:textSize="@dimen/txtsize_18"
+                        android:textStyle="bold"
+                        android:textColor="@color/FF16461b"/>
+
+                    <ImageView
+                        android:id="@+id/everydefecation_have_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/distance_5"
+                        android:layout_marginRight="@dimen/distance_5"
+                        app:srcCompat="@mipmap/circle" />
+
+                    <TextView
+                        android:id="@+id/everydefecation_none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/none"
+                        android:textSize="@dimen/txtsize_18"
+                        android:textStyle="bold"
+                        android:textColor="@color/FF16461b"/>
+
+                    <ImageView
+                        android:id="@+id/everydefecation_none_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/distance_5"
+                        android:layout_marginRight="@dimen/distance_5"
+                        app:srcCompat="@mipmap/circle" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/day"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/distance_10"
+                    app:layout_constraintLeft_toLeftOf="@+id/LinearLayout_everydefecation"
+                    app:layout_constraintTop_toBottomOf="@+id/LinearLayout_everydefecation"/>
+
+                <EditText
+                    android:id="@+id/day_keyin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_5"
+                    android:layout_marginTop="@dimen/distance_5"
+                    android:layout_gravity="center"
+                    android:background="@drawable/keyin_shape"
+                    android:textSize="@dimen/txtsize_18"
+                    android:inputType="text"
+                    app:layout_constraintLeft_toRightOf="@+id/day"
+                    app:layout_constraintRight_toRightOf="@+id/LinearLayout_everydefecation"
+                    app:layout_constraintTop_toBottomOf="@+id/LinearLayout_everydefecation"/>
+
+                <TextView
+                    android:id="@+id/frequency_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/frequency"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/distance_10"
+                    app:layout_constraintLeft_toRightOf="@+id/day_keyin"
+                    app:layout_constraintTop_toTopOf="@+id/day"/>
+
+                <TextView
+                    android:id="@+id/everydaypee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/everydaypee"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/distance_25"
+                    app:layout_constraintLeft_toLeftOf="@+id/day"
+                    app:layout_constraintTop_toBottomOf="@+id/day"/>
+
+                <EditText
+                    android:id="@+id/everydaypee_keyin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/distance_15"
+                    android:layout_marginLeft="@dimen/distance_5"
+                    android:layout_gravity="center"
+                    android:background="@drawable/keyin_shape"
+                    android:textSize="@dimen/txtsize_18"
+                    android:inputType="text"
+                    app:layout_constraintLeft_toRightOf="@+id/everydaypee"
+                    app:layout_constraintRight_toRightOf="@+id/time"
+                    app:layout_constraintTop_toBottomOf="@+id/frequency_day"/>
+
+                <TextView
+                    android:id="@+id/frequency_everydaypee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/frequency"
+                    android:textColor="@color/FF16461b"
+                    android:textSize="@dimen/txtsize_18"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/distance_10"
+                    app:layout_constraintLeft_toRightOf="@+id/everydaypee_keyin"
+                    app:layout_constraintTop_toTopOf="@+id/everydaypee"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/schedule_sports_Replenish"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/sleep"
-                android:textColor="@color/FF16461b"
-                android:textSize="@dimen/txtsize_18"
-                android:textStyle="bold"
                 android:layout_margin="@dimen/distance_10"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+                android:text="@string/schedule_sports_Replenish"
+                android:textColor="@color/FF16461b"
+                android:textSize="@dimen/txtsize_18"
+                android:textStyle="bold"/>
 
-            <Spinner
-                android:id="@+id/sleep_spinner"
-                android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/schedule_sports_Replenish_keyin"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/distance_10"
+                android:maxLines="1"
                 android:background="@drawable/keyin_shape"
                 android:textSize="@dimen/txtsize_18"
-                app:layout_constraintLeft_toRightOf="@+id/sleep"
-                app:layout_constraintTop_toTopOf="parent"/>
+                android:inputType="textMultiLine"
+                android:gravity="left|top"
+                android:minLines="6"/>
 
-            <TextView
-                android:id="@+id/ampm_sleep"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/ampm"
-                android:textColor="@color/FF16461b"
-                android:textSize="@dimen/txtsize_18"
-                android:textStyle="bold"
-                android:layout_margin="@dimen/distance_10"
-                app:layout_constraintLeft_toRightOf="@+id/sleep_spinner"
-                app:layout_constraintTop_toTopOf="parent"/>
-
-            <TextView
-                android:id="@+id/getup"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/getup"
-                android:textColor="@color/FF16461b"
-                android:textSize="@dimen/txtsize_18"
-                android:textStyle="bold"
-                android:layout_marginTop="@dimen/distance_20"
-                android:layout_marginLeft="@dimen/distance_10"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/sleep"/>
-
-            <Spinner
-                android:id="@+id/getup_spinner"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/distance_5"
-                android:layout_marginLeft="@dimen/distance_10"
-                android:background="@drawable/keyin_shape"
-                android:textSize="@dimen/txtsize_18"
-                app:layout_constraintLeft_toRightOf="@+id/getup"
-                app:layout_constraintTop_toBottomOf="@+id/sleep_spinner"/>
-
-            <TextView
-                android:id="@+id/ampm_getup"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ampm"
-                android:textColor="@color/FF16461b"
-                android:textSize="@dimen/txtsize_18"
-                android:textStyle="bold"
-                android:layout_marginTop="@dimen/distance_20"
-                android:layout_marginLeft="@dimen/distance_10"
-                app:layout_constraintLeft_toRightOf="@+id/getup_spinner"
-                app:layout_constraintTop_toBottomOf="@+id/ampm_sleep"/>
-
-            <TextView
-                android:id="@+id/sleephours"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/sleephours"
-                android:textColor="@color/FF16461b"
-                android:textSize="@dimen/txtsize_18"
-                android:textStyle="bold"
-                android:layout_marginTop="@dimen/distance_20"
-                android:layout_marginLeft="@dimen/distance_10"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/getup"/>
-
-            <Spinner
-                android:id="@+id/sleephours_spinner"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/distance_5"
-                android:layout_marginLeft="@dimen/distance_10"
-                android:background="@drawable/keyin_shape"
-                android:textSize="@dimen/txtsize_18"
-                app:layout_constraintLeft_toRightOf="@+id/sleephours"
-                app:layout_constraintTop_toBottomOf="@+id/getup_spinner"/>
-
-            <TextView
-                android:id="@+id/hrs"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/hrs"
-                android:textColor="@color/FF16461b"
-                android:textSize="@dimen/txtsize_18"
-                android:textStyle="bold"
-                android:layout_marginTop="@dimen/distance_20"
-                android:layout_marginLeft="@dimen/distance_10"
-                app:layout_constraintLeft_toRightOf="@+id/sleephours_spinner"
-                app:layout_constraintTop_toBottomOf="@+id/ampm_getup"/>
-
-            <TextView
-                android:id="@+id/exercisehabits"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/exercisehabits"
-                android:textColor="@color/FF16461b"
-                android:textSize="@dimen/txtsize_18"
-                android:textStyle="bold"
-                android:layout_marginTop="@dimen/distance_25"
-                android:layout_marginLeft="@dimen/distance_10"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/sleephours"/>
-
-            <LinearLayout
-                android:id="@+id/LinearLayout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="@dimen/distance_15"
-                android:layout_marginLeft="@dimen/distance_10"
-                app:layout_constraintLeft_toRightOf="@+id/exercisehabits"
-                app:layout_constraintTop_toBottomOf="@+id/sleephours">
-
-                <TextView
-                    android:id="@+id/family_medicalhistory_have"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/have"
-                    android:textSize="@dimen/txtsize_18"
-                    android:textStyle="bold"
-                    android:textColor="@color/FF16461b"/>
-
-                <ImageView
-                    android:id="@+id/family_medicalhistory_have_img"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/distance_5"
-                    android:layout_marginRight="@dimen/distance_5"
-                    app:srcCompat="@mipmap/circle" />
-
-                <TextView
-                    android:id="@+id/family_medicalhistory_none"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/none"
-                    android:textSize="@dimen/txtsize_18"
-                    android:textStyle="bold"
-                    android:textColor="@color/FF16461b"/>
-
-                <ImageView
-                    android:id="@+id/family_medicalhistory_none_img"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/distance_5"
-                    android:layout_marginRight="@dimen/distance_5"
-                    app:srcCompat="@mipmap/circle" />
-
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/project"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:text="@string/project"
-                android:textColor="@color/FF16461b"
-                android:textSize="@dimen/txtsize_18"
-                android:textStyle="bold"
                 android:layout_marginTop="@dimen/distance_10"
-                app:layout_constraintLeft_toLeftOf="@+id/LinearLayout"
-                app:layout_constraintTop_toBottomOf="@+id/LinearLayout"/>
+                android:layout_marginLeft="@dimen/distance_20"
+                android:layout_marginRight="@dimen/distance_20"
+                android:text="@string/ok"
+                android:textColor="@color/white"
+                android:background="@drawable/button_shape"/>
 
-            <EditText
-                android:id="@+id/project_keyin"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/distance_5"
-                android:layout_marginLeft="@dimen/distance_5"
-                android:layout_marginRight="@dimen/distance_50"
-                android:layout_gravity="center"
-                android:background="@drawable/keyin_shape"
-                android:textSize="@dimen/txtsize_18"
-                android:inputType="text"
-                app:layout_constraintLeft_toRightOf="@+id/project"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/LinearLayout"/>
+        </LinearLayout>
 
-            <TextView
-                android:id="@+id/week"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/week"
-                android:textColor="@color/FF16461b"
-                android:textSize="@dimen/txtsize_18"
-                android:textStyle="bold"
-                android:layout_marginTop="@dimen/distance_25"
-                app:layout_constraintLeft_toLeftOf="@+id/project"
-                app:layout_constraintTop_toBottomOf="@+id/project"/>
-
-            <EditText
-                android:id="@+id/weekmonth_keyin"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/distance_5"
-                android:layout_marginTop="@dimen/distance_5"
-                android:layout_gravity="center"
-                android:background="@drawable/keyin_shape"
-                android:textSize="@dimen/txtsize_18"
-                android:inputType="text"
-                app:layout_constraintLeft_toRightOf="@+id/week"
-                app:layout_constraintRight_toRightOf="@+id/everydaypee"
-                app:layout_constraintTop_toBottomOf="@+id/project_keyin"/>
-
-            <TextView
-                android:id="@+id/frequency"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/frequency"
-                android:textColor="@color/FF16461b"
-                android:textSize="@dimen/txtsize_18"
-                android:textStyle="bold"
-                android:layout_marginTop="@dimen/distance_15"
-                app:layout_constraintLeft_toRightOf="@+id/weekmonth_keyin"
-                app:layout_constraintTop_toBottomOf="@+id/project_keyin"/>
-
-            <TextView
-                android:id="@+id/time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/time"
-                android:textColor="@color/FF16461b"
-                android:textSize="@dimen/txtsize_18"
-                android:textStyle="bold"
-                app:layout_constraintLeft_toRightOf="@+id/frequency"
-                app:layout_constraintTop_toTopOf="@+id/frequency"/>
-
-            <EditText
-                android:id="@+id/time_keyin"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/distance_5"
-                android:layout_gravity="center"
-                android:background="@drawable/keyin_shape"
-                android:textSize="@dimen/txtsize_18"
-                android:inputType="text"
-                app:layout_constraintLeft_toRightOf="@+id/time"
-                app:layout_constraintRight_toRightOf="@+id/project_keyin"
-                app:layout_constraintTop_toBottomOf="@+id/project_keyin"/>
-
-            <TextView
-                android:id="@+id/hour"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/hour"
-                android:textColor="@color/FF16461b"
-                android:textSize="@dimen/txtsize_18"
-                android:textStyle="bold"
-                app:layout_constraintLeft_toRightOf="@+id/time_keyin"
-                app:layout_constraintTop_toTopOf="@+id/time"/>
-
-            <TextView
-                android:id="@+id/everydefecation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/everydefecation"
-                android:textColor="@color/FF16461b"
-                android:textSize="@dimen/txtsize_18"
-                android:textStyle="bold"
-                android:layout_marginTop="@dimen/distance_25"
-                android:layout_marginLeft="@dimen/distance_10"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/week"/>
-
-            <LinearLayout
-                android:id="@+id/LinearLayout_everydefecation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginLeft="@dimen/distance_5"
-                android:layout_marginTop="@dimen/distance_15"
-                app:layout_constraintLeft_toRightOf="@+id/everydefecation"
-                app:layout_constraintTop_toBottomOf="@+id/week">
-
-                <TextView
-                    android:id="@+id/everydefecation_have"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/have"
-                    android:textSize="@dimen/txtsize_18"
-                    android:textStyle="bold"
-                    android:textColor="@color/FF16461b"/>
-
-                <ImageView
-                    android:id="@+id/everydefecation_have_img"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/distance_5"
-                    android:layout_marginRight="@dimen/distance_5"
-                    app:srcCompat="@mipmap/circle" />
-
-                <TextView
-                    android:id="@+id/everydefecation_none"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/none"
-                    android:textSize="@dimen/txtsize_18"
-                    android:textStyle="bold"
-                    android:textColor="@color/FF16461b"/>
-
-                <ImageView
-                    android:id="@+id/everydefecation_none_img"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/distance_5"
-                    android:layout_marginRight="@dimen/distance_5"
-                    app:srcCompat="@mipmap/circle" />
-
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/day"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:text="@string/day"
-                android:textColor="@color/FF16461b"
-                android:textSize="@dimen/txtsize_18"
-                android:textStyle="bold"
-                android:layout_marginTop="@dimen/distance_10"
-                app:layout_constraintLeft_toLeftOf="@+id/LinearLayout_everydefecation"
-                app:layout_constraintTop_toBottomOf="@+id/LinearLayout_everydefecation"/>
-
-            <EditText
-                android:id="@+id/day_keyin"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/distance_5"
-                android:layout_marginTop="@dimen/distance_5"
-                android:layout_gravity="center"
-                android:background="@drawable/keyin_shape"
-                android:textSize="@dimen/txtsize_18"
-                android:inputType="text"
-                app:layout_constraintLeft_toRightOf="@+id/day"
-                app:layout_constraintRight_toRightOf="@+id/LinearLayout_everydefecation"
-                app:layout_constraintTop_toBottomOf="@+id/LinearLayout_everydefecation"/>
-
-            <TextView
-                android:id="@+id/frequency_day"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/frequency"
-                android:textColor="@color/FF16461b"
-                android:textSize="@dimen/txtsize_18"
-                android:textStyle="bold"
-                android:layout_marginLeft="@dimen/distance_10"
-                app:layout_constraintLeft_toRightOf="@+id/day_keyin"
-                app:layout_constraintTop_toTopOf="@+id/day"/>
-
-            <TextView
-                android:id="@+id/everydaypee"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:text="@string/everydaypee"
-                android:textColor="@color/FF16461b"
-                android:textSize="@dimen/txtsize_18"
-                android:textStyle="bold"
-                android:layout_marginTop="@dimen/distance_25"
-                app:layout_constraintLeft_toLeftOf="@+id/day"
-                app:layout_constraintTop_toBottomOf="@+id/day"/>
-
-            <EditText
-                android:id="@+id/everydaypee_keyin"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/distance_15"
-                android:layout_marginLeft="@dimen/distance_5"
-                android:layout_gravity="center"
-                android:background="@drawable/keyin_shape"
-                android:textSize="@dimen/txtsize_18"
-                android:inputType="text"
-                app:layout_constraintLeft_toRightOf="@+id/everydaypee"
-                app:layout_constraintRight_toRightOf="@+id/time"
-                app:layout_constraintTop_toBottomOf="@+id/frequency_day"/>
-
-            <TextView
-                android:id="@+id/frequency_everydaypee"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/frequency"
-                android:textColor="@color/FF16461b"
-                android:textSize="@dimen/txtsize_18"
-                android:textStyle="bold"
-                android:layout_marginLeft="@dimen/distance_10"
-                app:layout_constraintLeft_toRightOf="@+id/everydaypee_keyin"
-                app:layout_constraintTop_toTopOf="@+id/everydaypee"/>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <TextView
-            android:id="@+id/schedule_sports_Replenish"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/distance_10"
-            android:text="@string/schedule_sports_Replenish"
-            android:textColor="@color/FF16461b"
-            android:textSize="@dimen/txtsize_18"
-            android:textStyle="bold"/>
-
-        <EditText
-            android:id="@+id/schedule_sports_Replenish_keyin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:maxLines="1"
-            android:background="@drawable/keyin_shape"
-            android:textSize="@dimen/txtsize_18"
-            android:inputType="text"/>
-
-        <Button
-            android:id="@+id/ok"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/distance_10"
-            android:layout_marginLeft="@dimen/distance_20"
-            android:layout_marginRight="@dimen/distance_20"
-            android:text="@string/ok"
-            android:textColor="@color/white"
-            android:background="@drawable/button_shape"/>
-
-    </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

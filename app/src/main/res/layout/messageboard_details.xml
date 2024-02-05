@@ -9,7 +9,7 @@
 
     <include
         android:id="@+id/title"
-        layout="@layout/page1_title_layout"/>
+        layout="@layout/page_title_layout"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,9 +28,10 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_marginTop="@dimen/distance_5"
-            android:text="@string/messageboard"
+            android:text="@string/messageboard_details_title"
             android:textColor="@color/FF16461b"
-            android:textSize="@dimen/txtsize_18"/>
+            android:textSize="@dimen/txtsize_18"
+            android:textStyle="bold"/>
 
         <View
             android:id="@+id/line"
@@ -39,11 +40,32 @@
             android:background="@color/FFd8d9d9"
             android:layout_marginTop="@dimen/distance_5"/>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
+        <ImageView
+            android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="@dimen/distance_5"/>
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/imgupload" />
+
+        <TextView
+            android:id="@+id/messageboard_details_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_margin="@dimen/distance_5"
+            android:text="@string/messageboard_details_item"
+            android:textColor="@color/FF16461b"
+            android:textSize="@dimen/txtsize_18"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/messageboard_details_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_margin="@dimen/distance_5"
+            android:text="@string/messageboard_details_msg"
+            android:textColor="@color/FF16461b"
+            android:textSize="@dimen/txtsize_18"/>
 
     </LinearLayout>
 
